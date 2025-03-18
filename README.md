@@ -15,7 +15,7 @@ Ensure you have **Go installed** (version 1.18 or higher recommended). You can d
 ### Clone the Repository
 ```sh
  git clone https://github.com/vitorsv1/go-proxy.git
- cd http-proxy-logger
+ cd go-proxy
 ```
 
 ### Run the Proxy Server
