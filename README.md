@@ -30,6 +30,22 @@ By default, the proxy listens on **port 8080**.
   ```sh
   curl -x http://localhost:8080 http://example.com
   ```
+## Structure
+ 
+cmd/  
+   main.go           # Entry point for the application  
+internal/  
+proxy/               # Proxy folder logic  
+   proxy.go          # Core proxy functionality  
+   logger.go         # Logging
+   filter.go         # Domain blocklist  
+   config/           # Configuration settings
+      config.go      # Manage proxy settings  
+logs/                # Directory for storing log files  
+tests/               # Unit tests for proxy functionality  
+go.mod               # Go module file  
+README.md            # Project documentation  
+
 
 ## Next Steps
 Here are some enhancements you can add:
@@ -37,6 +53,5 @@ Here are some enhancements you can add:
 - Implement **domain blocklisting**
 - Save logs to a **file** instead of printing to the console
 
-## License
-This project is open-source and available under the **MIT License**.
+
 
