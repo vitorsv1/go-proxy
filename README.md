@@ -30,21 +30,21 @@ By default, the proxy listens on **port 8080**.
   ```sh
   curl -x http://localhost:8080 http://example.com
   ```
-## Structure
+## File Structure
  
-cmd/  
-   main.go           # Entry point for the application  
-internal/  
-proxy/               # Proxy folder logic  
-   proxy.go          # Core proxy functionality  
-   logger.go         # Logging
-   filter.go         # Domain blocklist  
-   config/           # Configuration settings
-      config.go      # Manage proxy settings  
-logs/                # Directory for storing log files  
-tests/               # Unit tests for proxy functionality  
-go.mod               # Go module file  
-README.md            # Project documentation  
+- cmd/  
+  - main.go             
+- internal/  
+  - proxy/                 
+    - proxy.go          
+    - logger.go        
+    - filter.go          
+  - config/           
+    - config.go      
+- logs/                  
+- tests/                
+- go.mod                
+- README.md  
 
 
 ## Next Steps
